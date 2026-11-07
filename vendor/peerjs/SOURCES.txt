@@ -1,0 +1,9 @@
+PeerJS and the modules it imports, as jsDelivr builds them (https://cdn.jsdelivr.net/npm/<package>@<version>/+esm),
+with their imports pointed at these local files. Served with the game so multiplayer needs no CDN and the App Store
+app runs no code fetched at run time.
+
+peerjs 1.5.4               MIT          https://github.com/peers/peerjs
+peerjs-js-binarypack 2.1.0 MIT          https://github.com/peers/js-binarypack
+@msgpack/msgpack 2.8.0     ISC          https://github.com/msgpack/msgpack-javascript
+webrtc-adapter 9.0.1       BSD-3-Clause https://github.com/webrtcHacks/adapter
+sdp 3.2.0                  MIT          https://github.com/fippo/sdp
