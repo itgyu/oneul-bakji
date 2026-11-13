@@ -1,0 +1,3 @@
+Nature models and textures: Stylized Nature MegaKit (Standard) by Quaternius, https://quaternius.com
+License: CC0 1.0 Universal (public domain), https://creativecommons.org/publicdomain/zero/1.0/
+Textures resized to 512 px and the bark normal maps dropped for phones.

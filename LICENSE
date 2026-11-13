@@ -1,0 +1,13 @@
+Copyright (c) 2026 itgyu (아윌비백 / I will be back). All rights reserved.
+
+This repository holds only the built files of the game served at https://itgyu.github.io/oneul-bakji/ and in the
+아윌비백 app. No licence is granted: you may play the game, but you may not copy, modify, reverse-engineer,
+redistribute, re-host or republish its code, data, graphics or text, in whole or in part, without written
+permission. Viewing this repository on GitHub does not grant any right to use its contents elsewhere.
+
+이 저장소의 파일(코드, 데이터, 그래픽, 글)은 저작권자의 서면 허락 없이 복제, 수정, 역분석, 배포, 다른 곳에 올리기를
+할 수 없습니다. 게임을 즐기는 것 외의 사용은 허용되지 않습니다.
+
+Third-party parts keep their own licences: three.js (MIT, vendor/three/LICENSE), PeerJS and its dependencies
+(MIT, vendor/peerjs/SOURCES.txt), the nature models in assets/nature (Quaternius, CC0 1.0). Map data © OpenStreetMap
+contributors (ODbL), weather data Open-Meteo (CC BY 4.0), terrain Mapzen/AWS Terrain Tiles.

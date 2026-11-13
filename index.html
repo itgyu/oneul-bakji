@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>I will be back · 아윌비백</title>
+  <meta name="description" content="선자령, 굴업도, 무랭게티, 금능해변, 후모톳바라. 실제 지형과 오늘 날씨 그대로 걷고, 텐트 치고, 하룻밤 자요. 같은 박지에 온 캠퍼와 목소리로 이야기해요.">
+  <link rel="canonical" href="https://itgyu.github.io/oneul-bakji/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="I will be back · 아윌비백">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://itgyu.github.io/oneul-bakji/">
+  <meta property="og:title" content="I will be back · 아윌비백 | 설치 없이 바로 떠나는 백패킹">
+  <meta property="og:description" content="선자령, 굴업도, 무랭게티, 금능해변, 후모톳바라. 실제 지형과 오늘 날씨 그대로 걷고, 텐트 치고, 하룻밤 자요. 같은 박지에 온 캠퍼와 목소리로 이야기해요.">
+  <meta property="og:image" content="https://itgyu.github.io/oneul-bakji/assets/og.jpg?v=20261106b">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="후지산이 보이는 후모톳바라 풀밭, 주황 텐트 옆 캠핑 의자에 앉은 캠퍼">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f241f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="아윌비백">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Song+Myung&family=IBM+Plex+Sans+KR:wght@700&family=Gaegu:wght@700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,500,100&display=swap">
+  <link rel="stylesheet" href="css/style.d381584633.css">
+  <link rel="preload" as="image" href="assets/splash/tall.webp" media="(orientation: portrait)">
+  <link rel="preload" as="image" href="assets/splash/wide.webp" media="(orientation: landscape)">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/build/three.module.js", "three/addons/": "./vendor/three/examples/jsm/" } }
+  </script>
+</head>
+<body>
+  <canvas id="scene" tabindex="0" aria-label="3D 장면"></canvas>
+  <div id="ui"></div>
+  <div id="boot" role="status" aria-label="불러오는 중">
+    <picture class="boot-art">
+      <source media="(orientation: landscape)" srcset="assets/splash/wide.webp">
+      <img src="assets/splash/tall.webp" alt="" fetchpriority="high">
+    </picture>
+    <div class="boot-top"><div class="logo"><h1 aria-label="아윌비백 I will be back">아윌비백</h1><p class="en">I will be back</p><small>실제 날씨로 떠나는 백패킹</small></div></div>
+    <div class="boot-load"><div class="bar"><i></i></div><p>실제 지형을 불러오는 중…</p></div>
+  </div>
+  <script>
+    // the logo waits for its font (a moment) so it never shows in a stand-in face first
+    (function () { var b = document.getElementById('boot'); var on = function () { b.classList.add('fonts'); };
+      try { Promise.race([Promise.all([document.fonts.load('700 60px Gaegu', '아윌비백'), document.fonts.load('italic 500 20px Fraunces', 'I will be back')]), new Promise(function (r) { setTimeout(r, 1500); })]).then(on, on); } catch (e) { on(); } })();
+  </script>
+  <p id="boot-error" hidden></p>
+  <script type="module" src="js/app.9a10db532d.js"></script>
+</body>
+</html>

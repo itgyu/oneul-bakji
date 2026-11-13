@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>도움말·신고·이용 약속 · I will be back (아윌비백)</title>
+  <meta name="theme-color" content="#0f241f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+  <style>
+    /* the game's canvas panel, made for reading */
+    :root { --spruce: #1d3b34; --spruce-d: #0f241f; --canvas: #f6e7c8; --canvas-3: #fff7e4; --sun: #ffc93c; --blaze: #f0611e; --blaze-d: #a83f0d; --text-2: #5b6b61; --line: rgba(29, 59, 52, 0.18); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(120% 80% at 50% 0%, #2b5247, var(--spruce-d)); color: var(--spruce); font: 15.5px/1.75 "Gowun Dodum", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: anywhere; padding: 24px 14px 56px; }
+    main { max-width: 780px; margin: 0 auto; background: var(--canvas); border: 3px solid var(--spruce-d); border-radius: 22px; padding: 0 22px 28px; box-shadow: 0 6px 0 rgba(0, 0, 0, 0.45), 0 18px 40px rgba(0, 0, 0, 0.35); outline: 2px dashed rgba(29, 59, 52, 0.25); outline-offset: -9px; overflow: hidden; }
+    header { margin: 0 -22px 18px; padding: 18px 22px 16px; background: var(--spruce); border-bottom: 3px solid var(--spruce-d); }
+    h1 { font: 400 32px/1.2 Jua, sans-serif; margin: 0; color: var(--sun); text-shadow: 0 3px 0 var(--spruce-d); }
+    header .meta { color: #a9c2b6; margin: 4px 0 0; }
+    h2 { display: flex; align-items: center; gap: 8px; font: 400 19px/1.4 Jua, sans-serif; margin: 30px 0 8px; }
+    h2::before { content: ''; flex: none; width: 10px; height: 10px; border-radius: 3px; background: var(--blaze); transform: rotate(45deg); }
+    b { font-family: Jua, sans-serif; font-weight: 400; }
+    p, li { margin: 6px 0; }
+    ul { padding-left: 20px; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 8px 0; font-size: 14.5px; background: var(--canvas-3); border: 3px solid var(--spruce); border-radius: 14px; overflow: hidden; box-shadow: 0 3px 0 var(--spruce); }
+    th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 2px dotted var(--line); }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+    th { width: 28%; font: 400 14.5px/1.6 Jua, sans-serif; color: var(--spruce); }
+    .meta { color: var(--text-2); font-size: 14px; }
+    .box { background: var(--canvas-3); border: 3px solid var(--spruce); border-radius: 14px; padding: 12px 16px; box-shadow: 0 3px 0 var(--spruce); }
+    a { color: var(--blaze-d); }
+    .back { display: inline-flex; align-items: center; gap: 6px; margin-top: 22px; padding: 10px 18px; border-radius: 14px; border: 3px solid var(--spruce); background: var(--blaze); color: #fff; font: 400 16px Jua, sans-serif; text-decoration: none; box-shadow: 0 4px 0 var(--spruce); }
+    .back:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--spruce); }
+    .faq dt { font: 400 16px/1.5 Jua, sans-serif; margin-top: 14px; }
+    .faq dd { margin: 4px 0 0; }
+    @media (max-width: 560px) { th, td { display: block; width: auto; } th { padding-bottom: 0; border-bottom: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>도움말·신고·이용 약속</h1>
+    <p class="meta">I will be back (아윌비백) · 웹과 iPhone·iPad 앱 · 2026년 11월 6일</p>
+  </header>
+
+  <div class="box">
+    <p><b>문의와 신고</b></p>
+    <ul>
+      <li>게임 안: 함께 캠핑(사람 모양 버튼) → 사람 옆 <b>차단·신고</b>. 차단은 바로 되고, 신고 내용은 메일이나 GitHub로 보낼 수 있어요.</li>
+      <li>게임 밖: <a href="https://github.com/itgyu/oneul-bakji/issues">github.com/itgyu/oneul-bakji/issues</a> 에 남겨 주세요. 받은 신고는 운영자가 확인하고 조치해요.</li>
+      <li>개인정보에 관한 것은 <a href="privacy.html">개인정보처리방침</a>을 봐 주세요.</li>
+    </ul>
+  </div>
+
+  <h2 id="terms">함께 캠핑 이용 약속</h2>
+  <p>아윌비백에선 같은 박지에 온 사람들끼리 서로의 캠퍼를 보고, 글과 목소리로 이야기해요. 누구나 편하게 머무는 캠핑장이 되도록 아래를 약속해 주세요. 처음 말을 걸거나 마이크를 누를 때 이 약속에 동의해야 대화를 쓸 수 있어요.</p>
+  <ul>
+    <li><b>무관용</b>: 욕설, 혐오 표현, 차별, 괴롭힘, 위협, 성적인 말이나 이름, 불법적인 내용은 허용하지 않아요.</li>
+    <li>다른 사람의 개인정보(연락처, 사는 곳, 사진 등)를 묻거나 알리지 않아요.</li>
+    <li>광고, 도배, 사칭을 하지 않아요.</li>
+    <li>약속을 어긴 캠퍼는 다른 사람이 차단·신고할 수 있고, 운영자는 확인 후 그 캠퍼가 함께 캠핑을 쓰지 못하게 할 수 있어요.</li>
+    <li>채팅과 이름에 나쁜 말이 들어가면 자동으로 ●●로 가려져요. 가려지지 않은 나쁜 말을 봤다면 신고해 주세요.</li>
+  </ul>
+
+  <h2>차단은 어떻게 되나요</h2>
+  <p>차단하면 이 기기에선 그 캠퍼의 모습, 텐트, 말, 목소리가 다시 나타나지 않아요. 상대에게는 알리지 않아요. 회원가입이 없어서 이름과 모습으로 같은 캠퍼를 알아봐요. 설정 → 차단한 캠퍼에서 차단을 모두 풀 수 있어요.</p>
+
+  <h2>자주 묻는 것</h2>
+  <dl class="faq">
+    <dt>날씨는 진짜인가요?</dt>
+    <dd>네. 네 박지의 오늘 실제 날씨예요. 비 오는 날엔 비가 오고, 한겨울 선자령엔 눈이 쌓여요. (날씨 데이터: Open-Meteo.com)</dd>
+    <dt>레벨은 어떻게 오르나요?</dt>
+    <dd>걷기, 텐트 치기, 아침까지 자기, 오늘의 의뢰, 처음 받는 도장, 별자리와 날씨 도감으로 올라요. 처음 며칠은 빨리 오르고, 갈수록 천천히 올라 1년 내내 할 거리가 남아요. 굴업도는 Lv 4, 후모톳바라는 Lv 10에 열려요.</dd>
+    <dt>휴대폰과 아이패드에서 같은 캠퍼로 할 수 있나요?</dt>
+    <dd>네. 진행은 기기와 서버에 함께 저장돼요. 하던 기기에서 설정 → 기기 이어하기 → ‘다른 기기 연결 코드’를 누르고, 새 기기에서 ‘코드로 이 기기 연결’에 8자리 코드를 넣으면 같은 캠퍼로 이어져요. 로그인이나 이메일은 필요 없어요. 설정 → 진행 백업의 백업 코드로도 옮길 수 있어요.</dd>
+    <dt>한잔하기는 뭔가요?</dt>
+    <dd>각자 집에서 한 잔씩 하며 함께 이야기하는 캠퍼들을 위한 기능이에요. 맥주·소주·막걸리를 들고 ‘짠’을 누르면 누구와 할지 고를 수 있어요. 고른 사람에게 짠 요청이 가고, 받아 주면 잔을 부딪쳐요. 옆 캠퍼(NPC)도 잔을 들어 줘요. 게임 속 보상은 없어요. 과음은 금물이고, 미성년자는 음주하면 안 돼요.</dd>
+    <dt>드론으로 찍은 사진과 영상은 어디 있나요?</dt>
+    <dd>드론을 띄우고 ‘사진’이나 ‘녹화’를 누르면 앨범에 담겨요(영상은 최대 60초). 사진 모드에서도 찍고 녹화할 수 있어요. 앨범은 게임을 닫으면 사라지니, 마음에 드는 건 ‘저장’이나 ‘공유’로 보관하세요. 드론은 땅에 세게 부딪히거나 풍차에 맞으면 떨어지고, 바다에 빠지면 잃어버려요.</dd>
+    <dt>옆 캠퍼(NPC)와 이야기할 수 있나요?</dt>
+    <dd>네. 가까이 가서 ‘말 걸기’로 말을 걸면 날씨, 노을, 별, 오는 길, 장비 이야기를 실제 날씨와 장소에 맞춰 대답해요. NPC와 나눈 말은 이 기기에만 있고 어디로도 보내지 않아요.</dd>
+    <dt>화장실은요?</dt>
+    <dd>‘화장실’을 누르면 야영지에서 조금 떨어진 곳에 다녀와요. 실제 백패킹처럼 흔적을 남기지 않는 게 예의예요. 소변 자리는 물로 헹구고, 큰일은 땅을 파서 묻고 덮거나 휴대용 봉투에 담아 쓰레기 버리는 곳에 버려요.</dd>
+    <dt>마이크가 안 돼요.</dt>
+    <dd>iPhone 설정 → 아윌비백 → 마이크를 켜 주세요. 마이크 버튼을 누르고 있는 동안에만 목소리가 같은 박지 사람들에게 전해지고, 어디에도 녹음되거나 저장되지 않아요.</dd>
+    <dt>장비 브랜드는 진짜인가요?</dt>
+    <dd>아니요. 파타고냐, 헬로녹스처럼 게임에서 지어낸 이름이에요. 백패커들이 즐겨 쓰는 장비의 모양과 색을 따랐지만, 실제 회사의 이름이나 로고는 쓰지 않았고 어느 회사와도 관계없어요. 광고도 아니에요.</dd>
+  </dl>
+
+  <a class="back" href="./">게임으로 돌아가기</a>
+</main>
+</body>
+</html>
