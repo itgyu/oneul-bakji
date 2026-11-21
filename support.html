@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>도움말·신고·이용 약속 · I will be back (아윌비백)</title>
+  <meta name="theme-color" content="#0f241f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+  <style>
+    /* the game's canvas panel, made for reading */
+    :root { --spruce: #1d3b34; --spruce-d: #0f241f; --canvas: #f6e7c8; --canvas-3: #fff7e4; --sun: #ffc93c; --blaze: #f0611e; --blaze-d: #a83f0d; --text-2: #5b6b61; --line: rgba(29, 59, 52, 0.18); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(120% 80% at 50% 0%, #2b5247, var(--spruce-d)); color: var(--spruce); font: 15.5px/1.75 "Gowun Dodum", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: anywhere; padding: 24px 14px 56px; }
+    main { max-width: 780px; margin: 0 auto; background: var(--canvas); border: 3px solid var(--spruce-d); border-radius: 22px; padding: 0 22px 28px; box-shadow: 0 6px 0 rgba(0, 0, 0, 0.45), 0 18px 40px rgba(0, 0, 0, 0.35); outline: 2px dashed rgba(29, 59, 52, 0.25); outline-offset: -9px; overflow: hidden; }
+    header { margin: 0 -22px 18px; padding: 18px 22px 16px; background: var(--spruce); border-bottom: 3px solid var(--spruce-d); }
+    h1 { font: 400 32px/1.2 Jua, sans-serif; margin: 0; color: var(--sun); text-shadow: 0 3px 0 var(--spruce-d); }
+    header .meta { color: #a9c2b6; margin: 4px 0 0; }
+    h2 { display: flex; align-items: center; gap: 8px; font: 400 19px/1.4 Jua, sans-serif; margin: 30px 0 8px; }
+    h2::before { content: ''; flex: none; width: 10px; height: 10px; border-radius: 3px; background: var(--blaze); transform: rotate(45deg); }
+    b { font-family: Jua, sans-serif; font-weight: 400; }
+    p, li { margin: 6px 0; }
+    ul { padding-left: 20px; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 8px 0; font-size: 14.5px; background: var(--canvas-3); border: 3px solid var(--spruce); border-radius: 14px; overflow: hidden; box-shadow: 0 3px 0 var(--spruce); }
+    th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 2px dotted var(--line); }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+    th { width: 28%; font: 400 14.5px/1.6 Jua, sans-serif; color: var(--spruce); }
+    .meta { color: var(--text-2); font-size: 14px; }
+    .box { background: var(--canvas-3); border: 3px solid var(--spruce); border-radius: 14px; padding: 12px 16px; box-shadow: 0 3px 0 var(--spruce); }
+    a { color: var(--blaze-d); }
+    .back { display: inline-flex; align-items: center; gap: 6px; margin-top: 22px; padding: 10px 18px; border-radius: 14px; border: 3px solid var(--spruce); background: var(--blaze); color: #fff; font: 400 16px Jua, sans-serif; text-decoration: none; box-shadow: 0 4px 0 var(--spruce); }
+    .back:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--spruce); }
+    .faq dt { font: 400 16px/1.5 Jua, sans-serif; margin-top: 14px; }
+    .faq dd { margin: 4px 0 0; }
+    @media (max-width: 560px) { th, td { display: block; width: auto; } th { padding-bottom: 0; border-bottom: 0; } }
+  </style>
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+  <script>
+    if (location.hostname === 'itgyu.github.io') fetch('https://iwillbeback.kr/home.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) { if (j && j.home === 'iwillbeback') location.replace('https://iwillbeback.kr/' + location.pathname.split('/').pop() + location.hash); }).catch(function () {});
+  </script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>도움말·신고·이용 약속</h1>
+    <p class="meta">I will be back (아윌비백) · 웹과 iPhone·iPad·Android 앱 · 2026년 11월 17일</p>
+  </header>
+
+  <div class="box">
+    <p><b>문의와 신고</b></p>
+    <ul>
+      <li>게임 안: 함께 캠핑(사람 모양 버튼) → 사람 옆 <b>점 세 개(⋯) 버튼</b> → 차단하기 또는 신고하고 차단하기. 차단은 바로 되고, 신고 화면의 ‘메일로 보내기’를 누르면 내용이 채워진 메일이 열려요.</li>
+      <li>게임 밖: <a href="mailto:itgyu@kakao.com">itgyu@kakao.com</a>으로 메일을 보내 주세요. 받은 신고는 운영자가 확인하고 조치해요.</li>
+      <li>개인정보에 관한 것은 <a href="privacy.html">개인정보처리방침</a>을 봐 주세요.</li>
+    </ul>
+  </div>
+
+  <h2 id="terms">함께 캠핑 이용 약속</h2>
+  <p>아윌비백에선 같은 박지에 온 사람들끼리 서로의 캠퍼를 보고, 글과 목소리로 이야기해요. 누구나 편하게 머무는 캠핑장이 되도록 아래를 약속해 주세요. 처음 말을 걸거나 마이크를 누를 때 이 약속에 동의해야 대화를 쓸 수 있어요.</p>
+  <ul>
+    <li><b>무관용</b>: 욕설, 혐오 표현, 차별, 괴롭힘, 위협, 성적인 말이나 이름, 불법적인 내용은 허용하지 않아요.</li>
+    <li>다른 사람의 개인정보(연락처, 사는 곳, 사진 등)를 묻거나 알리지 않아요.</li>
+    <li>광고, 도배, 사칭을 하지 않아요.</li>
+    <li>약속을 어긴 캠퍼는 다른 사람이 차단·신고할 수 있고, 운영자는 확인 후 그 캠퍼가 함께 캠핑을 쓰지 못하게 할 수 있어요.</li>
+    <li>채팅과 이름에 나쁜 말이 들어가면 자동으로 ●●로 가려져요. 가려지지 않은 나쁜 말을 봤다면 신고해 주세요.</li>
+  </ul>
+
+  <h2>차단은 어떻게 되나요</h2>
+  <p>차단하면 이 기기에선 그 캠퍼의 모습, 텐트, 말, 목소리가 다시 나타나지 않아요. 상대에게는 알리지 않아요. 회원가입이 없어서 이름과 모습으로 같은 캠퍼를 알아봐요. 설정 → 차단한 캠퍼에서 차단을 모두 풀 수 있어요.</p>
+
+  <h2>자주 묻는 것</h2>
+  <dl class="faq">
+    <dt>날씨는 진짜인가요?</dt>
+    <dd>네. 네 박지의 오늘 실제 날씨예요. 비 오는 날엔 비가 오고, 한겨울 선자령엔 눈이 쌓여요. (날씨 데이터: Open-Meteo.com)</dd>
+    <dt>레벨은 어떻게 오르나요?</dt>
+    <dd>걷기, 텐트 치기, 아침까지 자기, 오늘의 의뢰, 오늘 처음 하는 일(커피, 밥, 모닥불, 낚시, 사진, 짠…), 모험 수첩, 처음 받는 도장, 별자리와 날씨 도감으로 올라요. 처음 열 레벨은 며칠이면 오르고, 그다음은 하루이틀에 한 레벨쯤, 갈수록 천천히 올라요. 레벨마다 새 박지, 장비, 춤, 표정, 칭호 같은 보상이 열리고, Lv 10·20·30·40·50에는 이름표의 레벨 배지 색이 바뀌어요. 금능해변은 Lv 3, 굴업도는 Lv 4, 후모톳바라는 Lv 10에 열려요. 여권의 ‘레벨 보상’에서 Lv 50까지 무엇이 열리는지 볼 수 있어요.</dd>
+    <dt>모험 수첩은 뭔가요?</dt>
+    <dd>첫 박지부터 각 박지, 함께 캠핑, 진짜 날씨의 밤, 겨울, 희귀한 순간까지 이어지는 15개의 장이에요. 레벨이 오르면 새 장이 열리고, 단계는 순서와 상관없이 해내면 채워져요. 지금 할 수 있는 단계는 화면 위 카드에 나오고, 단계와 장을 마칠 때마다 경험치를 받아요. 여권의 모험 수첩에는 단계마다 하는 법이 적혀 있어요. 노을·일출·별밤·운해 같은 하늘의 순간은 ‘시간과 날씨’에서 시각과 ‘맑음’을 골라도 채워지고, 별자리 도감·날씨 도감·쌀쌀하거나 혹독한 밤은 실제 날씨의 밤에만 채워져요(오늘 밤 그런 곳이 있으면 카드가 알려 줘요). 장이 열리기 전에 이미 해 둔 일은 장이 열릴 때 채워져요.</dd>
+    <dt>친구는 어떻게 추가하나요?</dt>
+    <dd>오른쪽 위 ‘함께’에서 이 박지에 있는 사람 옆의 친구 신청 버튼(사람과 + 모양)을 누르면, 상대 화면에 신청 카드가 떠요. 상대가 받으면 서로 친구가 되고, 친구가 접속하면 알려 드려요. 친구 목록의 ‘만나러 가기’로 친구가 있는 박지의 친구 옆까지 바로 가요. 친구 목록은 기기 이어하기와 백업 코드에 같이 담겨요.</dd>
+    <dt>바다에서 수영할 수 있나요?</dt>
+    <dd>금능해변·굴업도·무랭게티는 바다로 걸어 들어갈 수 있어요. 물이 깊어지면 자유형으로 헤엄치고, 얕아지면 다시 걸어요. 달리기를 켜면 더 빨리 헤엄치고, ‘헤엄쳐 나가기’를 누르면 가까운 물가로 가요.</dd>
+    <dt>지도에서 원하는 곳으로 바로 갈 수 있나요?</dt>
+    <dd>‘길 안내’ 지도에서 장소나 지도 위 아무 곳을 누르면 ‘바로 가기’와 ‘걸어서 가기’가 떠요. 걸어서 갈 때는 오른쪽 위 작은 지도에 빨간 선이 이어져요.</dd>
+    <dt>춤과 표정은 어떻게 하나요?</dt>
+    <dd>말 걸기 옆 웃는 얼굴 버튼을 누르면 표정, 몸짓, 춤이 내 캠퍼의 그림으로 나와요. 누르면 같은 박지의 모두에게 보여요. 춤은 걷기 시작하거나 같은 춤을 다시 누르면 멈춰요. 레벨이 오를 때마다 새 춤과 표정이 열려요.</dd>
+    <dt>닉네임을 바꿀 수 있나요?</dt>
+    <dd>아니요. 닉네임은 처음 한 번 정하면 바꿀 수 없어요. 같은 닉네임은 한 캠퍼만 쓸 수 있어서, 첫 화면에서 닉네임을 적고 ‘확인’을 누르면 쓸 수 있는지 먼저 알려 드려요. 띄어쓰기나 영문 대소문자만 다른 닉네임도 같은 닉네임으로 봐요. 2~12자의 한글·영문·숫자로 정하고, 운영자로 보일 수 있는 이름이나 나쁜 말은 쓸 수 없어요.</dd>
+    <dt>PC에서도 할 수 있나요? 앱과 PC에서 같은 캐릭터로 할 수 있나요?</dt>
+    <dd>네. PC 브라우저에서 <a href="https://iwillbeback.kr">iwillbeback.kr</a>을 열면 큰 화면과 키보드·마우스로 즐길 수 있고, 어느 쪽으로든 같은 캐릭터로 이어 할 수 있어요. 코드는 10분 동안 한 번만 쓸 수 있어요.<br>
+    · 앱에서 하던 캐릭터를 PC로: 앱 첫 화면의 ‘PC 연결 코드’를 누르고, PC 첫 화면의 ‘캐릭터 불러오기’에 8자리 코드를 넣어요.<br>
+    · PC에서 하던 캐릭터를 앱으로: 앱을 먼저 받아 열어 두고, PC 첫 화면의 ‘앱 연결 코드’를 누른 뒤 앱 첫 화면의 ‘캐릭터 불러오기’에 코드를 넣어요.<br>
+    휴대폰과 아이패드처럼 기기끼리도 같은 방법이에요(설정 → 다른 기기에서 이어하기에도 있어요). 연결한 기기끼리는 진행이 자동으로 맞춰지고, 로그인이나 이메일은 필요 없어요.</dd>
+    <dt>다른 캠퍼가 내 의자를 접었어요. 어떻게 하나요?</dt>
+    <dd>박지에서는 서로 장난칠 수 있어요. 다른 캠퍼의 의자·테이블·텐트를 접거나 옮기고, 자는 텐트를 들여다보거나 빈 텐트에 들어가 잘 수 있어요. 누가 했는지는 주인에게 알림과 채팅 기록으로 남아요. 접힌 장비는 가방으로 그 자리에 남으니 그 앞에서 ‘펴기’를 누르면 돼요. 사람이 앉아 있는 의자나 사람이 든 텐트는 건드릴 수 없고, 한 사람이 같은 사람에게 10분에 세 번까지만 할 수 있어요. 괴롭힘이라고 느껴지면 함께 캠핑 목록에서 차단·신고해 주세요.</dd>
+    <dt>솔방울은 뭔가요? 감성 소품은 어디서 사요?</dt>
+    <dd>솔방울은 놀면서 모으는 게임 속 화폐예요. 경험치 10마다 1개씩, 하루 150개까지 모여요. 꾸미기 → 감성 소품에서 줄전구, 가랜드, 러그, 캠프 깃발 같은 소품을 솔방울로 사요. 사기 전에 ‘놓아 보기’로 미리 볼 수 있고, 산 소품은 텐트를 치면 텐트 둘레에 놓여서 같은 박지의 모두에게 보여요. 솔방울은 돈으로 사거나 팔 수 없어요.</dd>
+    <dt>한잔하기는 뭔가요?</dt>
+    <dd>각자 집에서 한 잔씩 하며 함께 이야기하는 캠퍼들을 위한 기능이에요. 맥주·소주·막걸리를 들고 ‘짠’을 누르면 누구와 할지 고를 수 있어요. 고른 사람에게 짠 요청이 가고, 받아 주면 잔을 부딪쳐요. 옆 캠퍼(NPC)도 잔을 들어 줘요. 게임 속 보상은 없어요. 많이 마시면 취해서 휘청이고, 의자에 앉아 있으면 의자째 콰당 넘어지기도 해요(같은 박지의 모두에게 보여요). 넘어진 의자는 ‘의자 세우기’로 세워요. 과음은 금물이고, 미성년자는 음주하면 안 돼요.</dd>
+    <dt>드론으로 찍은 사진과 영상은 어디 있나요?</dt>
+    <dd>드론을 띄우고 ‘사진’이나 ‘녹화’를 누르면 앨범에 담겨요(영상은 최대 60초). 사진 모드에서도 찍고 녹화할 수 있어요. 앨범은 게임을 닫으면 사라지니, 마음에 드는 건 ‘저장’이나 ‘공유’로 보관하세요. 드론은 땅에 세게 부딪히거나 풍차에 맞으면 떨어지고, 바다에 빠지면 잃어버려요.</dd>
+    <dt>옆 캠퍼(NPC)와 이야기할 수 있나요?</dt>
+    <dd>네. 가까이 가서 ‘말 걸기’로 말을 걸면 날씨, 노을, 별, 오는 길, 장비 이야기를 실제 날씨와 장소에 맞춰 대답해요. NPC와 나눈 말은 이 기기에만 있고 어디로도 보내지 않아요.</dd>
+    <dt>화장실은요?</dt>
+    <dd>‘행동’ → ‘화장실’을 누르면 야영지에서 조금 떨어진 곳에 다녀와요. 시간이 지나거나 커피, 술, 밥을 먹으면 이름판 아래 소변·큰일 게이지가 차올라요. 80%가 넘으면 알려 주고, 100%가 되면 참지 못하고 그 자리에서 볼일을 보게 돼요(다른 캠퍼에게도 보여요). 게이지를 누르면 바로 화장실에 갈 수 있어요. 실제 백패킹처럼 흔적을 남기지 않는 게 예의예요. 소변 자리는 물로 헹구고, 큰일은 땅을 파서 묻고 덮거나 휴대용 봉투에 담아 쓰레기 버리는 곳에 버려요.</dd>
+    <dt>마이크가 안 돼요.</dt>
+    <dd>iPhone 설정 → 아윌비백 → 마이크를 켜 주세요(안드로이드는 설정 → 애플리케이션 → 아윌비백 → 권한). 마이크 버튼을 누르고 있는 동안에만 목소리가 가까이(30m 안) 있는 사람들에게 전해지고, 어디에도 녹음되거나 저장되지 않아요. 멀어질수록 작아지고, 글로 쓴 채팅은 같은 박지 모두가 봐요.</dd>
+    <dt>마이크 버튼을 누르지 않았는데 마이크 사용 표시가 떠 있어요.</dt>
+    <dd>아이폰은 마이크가 켜지고 꺼질 때마다 게임 소리가 통화처럼 바뀌어요. 그래서 캠핑을 시작할 때 마이크를 켜 두고, 처음부터 끝까지 소리를 같게 해요(안드로이드 폰은 버튼을 누를 때만 켜져요). 목소리는 버튼을 누르고 있을 때만 전해지고, 녹음하거나 저장하지 않아요. 마이크를 쓰고 싶지 않으면 권한을 허용하지 않아도 게임은 그대로 할 수 있어요.</dd>
+    <dt>어떤 사람 목소리는 조금 늦게, 무전기처럼 들려요.</dt>
+    <dd>몇몇 통신망과 공유기는 휴대폰끼리 직접 이어지는 걸 막아요. 그럴 땐 게임 서버가 대신 이어 줘서, 캐릭터와 채팅은 그대로 보이고 목소리는 0.5초쯤 늦게, 조금 거칠게 들려요. 이때도 목소리는 마이크 버튼을 누르고 있는 동안에만 전해지고, 서버는 전하기만 할 뿐 저장하지 않아요.</dd>
+    <dt>장비 브랜드는 진짜인가요?</dt>
+    <dd>아니요. 파타고냐, 헬로녹스처럼 게임에서 지어낸 이름이에요. 백패커들이 즐겨 쓰는 장비의 모양과 색을 따랐지만, 실제 회사의 이름이나 로고는 쓰지 않았고(텐트·의자에 찍힌 글자도 지어낸 이름이에요) 어느 회사와도 관계없어요. 광고도 아니에요.</dd>
+  </dl>
+
+  <a class="back" href="./">게임으로 돌아가기</a>
+</main>
+</body>
+</html>
